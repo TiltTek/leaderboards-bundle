@@ -1,6 +1,6 @@
 {
     "name": "tilttek/leaderboards-bundle",
-    "description": "Leaderboards for Symfony on tilttek/leaderboards: boards, periods, sliding windows, snapshots and weekly leagues in configuration, scores in Doctrine DBAL or Valkey kept up to date from members' activity, events for snapshots, leagues and the top, Twig standings drawn with a UX Toolkit kit, scheduled commands, and member export and erasure",
+    "description": "tilttek/leaderboards in Symfony: boards, periods and weekly leagues in configuration, scores kept up to date from members' activity, and standings in Twig.",
     "license": "MIT",
     "type": "symfony-bundle",
     "keywords": [
@@ -22,7 +22,7 @@
     "homepage": "https://ph-il.ca",
     "require": {
         "php": ">=8.5",
-        "doctrine/dbal": "^4.5",
+        "doctrine/dbal": "^4.6",
         "phil/resource": "^0.1@dev",
         "psr/clock": "^1.0",
         "psr/event-dispatcher": "^1.0",
@@ -31,9 +31,9 @@
         "tilttek/leaderboards": "^0.2@dev"
     },
     "require-dev": {
-        "doctrine/doctrine-bundle": "^3.3",
-        "doctrine/orm": "^3.7",
-        "phil/privacy-bundle": "^0.1@dev",
+        "doctrine/doctrine-bundle": "^3.4",
+        "doctrine/orm": "^3.8",
+        "phil/privacy-bundle": "^0.2@dev",
         "phil/ux-kit": ">=0.5.0-alpha <1.0",
         "phpunit/phpunit": "^13.4",
         "symfony/cache": "^8.2",
@@ -46,11 +46,11 @@
         "symfony/scheduler": "^8.2",
         "symfony/translation": "^8.2",
         "symfony/twig-bundle": "^8.2",
-        "symfony/ux-twig-component": "^3.7",
+        "symfony/ux-twig-component": "^3.8",
         "symfony/yaml": "^8.2",
         "tilttek/activity": "^0.1@dev",
-        "tilttek/activity-bundle": "^0.1@dev || ^0.2@dev",
-        "twig/twig": "^3.21"
+        "tilttek/activity-bundle": "^0.2@dev",
+        "twig/twig": "^3.31"
     },
     "suggest": {
         "doctrine/orm": "To add the leaderboards' tables to the schema the ORM generates, and so to the migrations",
